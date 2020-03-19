@@ -1,4 +1,4 @@
-# Northwind database for Postgres
+# Northwind database for Hasura
 
 A simple sql script that will populate a database with the famous northwind example,
 adapted for postgres.
@@ -15,10 +15,9 @@ Use the provided sql file `nortwhind.sql` in order to populate your database.
 
 #### Pre-requirement: install docker and docker-compose
 
- https://www.docker.com/get-started
+https://www.docker.com/get-started
 
- https://docs.docker.com/compose/install/
-
+https://docs.docker.com/compose/install/
 
 #### 1. run docker-compose
 
@@ -40,7 +39,7 @@ db_1  | 2019-11-28 21:07:14.474 UTC [1] LOG:  database system is ready to accept
 
 Open another terminal window, and type:
 
-````bash
+```bash
 > docker-compose exec db psql -U northwind_user -d northwind
 
 psql (10.5 (Debian 10.5-1.pgdg90+1))
@@ -52,7 +51,7 @@ postgres=# select * from us_states;
         1 | Alabama              | AL         | south
         2 | Alaska               | AK         | north
         ...
-````
+```
 
 #### 3. stop docker-compose
 
